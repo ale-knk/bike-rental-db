@@ -1,0 +1,19 @@
+[project]
+name = "bike_rental_db"
+version = "0.1.0"
+description = "Python package for managing the MongoDB database of the bike rental application."
+authors = [
+    { name = "Alejandro Requena", email = "rb.jandro@gmail.com" }
+]
+license = { text = "MIT" }
+dependencies = [
+    "pydantic==2.8.2",
+    "pymongo==4.8.0",
+    "python-dotenv==1.0.1",
+    "pandas==2.2.2",
+    "scikit-learn==1.5.1",
+    "polars==1.5.0"
+]
+
+[project.scripts]
+populate-db = "bike_rental_db.scripts.populate_db:main"
